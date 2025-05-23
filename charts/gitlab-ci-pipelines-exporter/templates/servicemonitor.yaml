@@ -15,4 +15,6 @@ spec:
       {{- include "app.selectorLabels" . | nindent 6 }}
   endpoints:
     {{- .Values.serviceMonitor.endpoints | toYaml | nindent 4 }}
+  metricRelabelings:
+    {{- .Values.serviceMonitor.metricRelabelings | toYaml | nindent 4 }}
 {{- end }}
