@@ -170,8 +170,16 @@ serviceMonitor:
   # serviceMonitor.annotations -- additional annotations for the service monitor
   annotations: {}
 
-  # serviceMonitor.metricRelabelings -- additional metricRelabelings for the service monitor
+  ## serviceMonitor.metricRelabelings to apply to samples after scraping, but before ingestion.
+  ## ref: https://github.com/prometheus-operator/prometheus-operator/blob/main/Documentation/api-reference/api.md#relabelconfig
+  ##
   metricRelabelings: []
+  # eg:
+  # - sourceLabels: [__name__, variables]
+  #   regex: gitlab_ci_pipeline_.*;.*,*MY_PIPELINE_VAR:([^,]+),*.*
+  #   targetLabel: my_pipeline_var
+  #   replacement: $1
+  #   action: replace
 
 ## Spin up a redis pod using the bitnami chart
 ## https://github.com/bitnami/charts/blob/master/bitnami/redis
