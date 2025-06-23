@@ -1,6 +1,6 @@
 # gitlab-ci-pipelines-exporter
 
-![Version: 0.3.5](https://img.shields.io/badge/Version-0.3.5-informational?style=flat-square) ![AppVersion: v0.5.10](https://img.shields.io/badge/AppVersion-v0.5.10-informational?style=flat-square)
+![Version: 0.3.6](https://img.shields.io/badge/Version-0.3.6-informational?style=flat-square) ![AppVersion: v0.5.11](https://img.shields.io/badge/AppVersion-v0.5.11-informational?style=flat-square)
 
 Prometheus / OpenMetrics exporter for GitLab CI pipelines insights
 
@@ -78,7 +78,7 @@ Prometheus / OpenMetrics exporter for GitLab CI pipelines insights
 | serviceMonitor.enabled | bool | `false` | deploy a serviceMonitor resource |
 | serviceMonitor.endpoints | list | `[{"interval":"10s","port":"http"}]` | endpoints configuration for the monitor |
 | serviceMonitor.labels | object | `{}` | additional labels for the service monitor |
-| serviceMonitor.metricRelabelings | list | `[]` | additional metricRelabelings for the service monitor |
+| serviceMonitor.metricRelabelings | list | `[]` | to apply to samples after scraping, but before ingestion |
 | strategy | object | `{"type":"RollingUpdate"}` | deployment strategy type |
 | tolerations | list | `[]` | tolerations for pod assignment # ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/ |
 | webhookSecret | string | `""` | name of a `Secret` containing the webhook token in the `webhookToken` field (required unless `config.server.webhook.secret_token` is specified) |
