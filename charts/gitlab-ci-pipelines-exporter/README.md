@@ -78,6 +78,7 @@ Prometheus / OpenMetrics exporter for GitLab CI pipelines insights
 | serviceMonitor.enabled | bool | `false` | deploy a serviceMonitor resource |
 | serviceMonitor.endpoints | list | `[{"interval":"10s","port":"http"}]` | endpoints configuration for the monitor |
 | serviceMonitor.labels | object | `{}` | additional labels for the service monitor |
+| serviceMonitor.metricRelabelings | list | `[]` | additional metricRelabelings for the service monitor |
 | strategy | object | `{"type":"RollingUpdate"}` | deployment strategy type |
 | tolerations | list | `[]` | tolerations for pod assignment # ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/ |
 | webhookSecret | string | `""` | name of a `Secret` containing the webhook token in the `webhookToken` field (required unless `config.server.webhook.secret_token` is specified) |
