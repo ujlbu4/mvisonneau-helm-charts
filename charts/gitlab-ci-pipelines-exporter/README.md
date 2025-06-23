@@ -82,4 +82,3 @@ Prometheus / OpenMetrics exporter for GitLab CI pipelines insights
 | strategy | object | `{"type":"RollingUpdate"}` | deployment strategy type |
 | tolerations | list | `[]` | tolerations for pod assignment # ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/ |
 | webhookSecret | string | `""` | name of a `Secret` containing the webhook token in the `webhookToken` field (required unless `config.server.webhook.secret_token` is specified) |
-
