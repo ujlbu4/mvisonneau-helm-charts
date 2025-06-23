@@ -1,0 +1,107 @@
+apiVersion: v1
+entries:
+  approuvez:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2025-06-23T20:34:09.628356626Z"
+    description: CLI helper to obtain live confirmation from people over Slack
+    digest: 430ee30029f61bc6c07691085aee4d92d8f9a97ccf67f4bd2723dee0227222ba
+    home: https://github.com/mvisonneau/approuvez
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: approuvez
+    sources:
+    - https://github.com/mvisonneau/helm-charts/tree/main/charts/approuvez
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/approuvez-0.1.1/approuvez-0.1.1.tgz
+    version: 0.1.1
+  generic-app:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2025-06-23T20:34:09.735878504Z"
+    description: Generic Application Chart
+    digest: 34d273344ad134f42eda241eb7c44929afcab1010a65f80876fecf12d813fd80
+    home: https://github.com/mvisonneau/helm-charts
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: generic-app
+    sources:
+    - https://github.com/mvisonneau/helm-charts/tree/main/charts/generic-app
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/generic-app-0.0.17/generic-app-0.0.17.tgz
+    version: 0.0.17
+  gitlab-ci-pipelines-exporter:
+  - apiVersion: v2
+    appVersion: v0.5.11
+    created: "2025-06-23T20:34:09.899070965Z"
+    dependencies:
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 20.4.0
+    description: Prometheus / OpenMetrics exporter for GitLab CI pipelines insights
+    digest: 4a59454c24a354e5a3fbe22c8c5b88891eed802140be322f2234f6a107ada3eb
+    home: https://github.com/mvisonneau/gitlab-ci-pipelines-exporter
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: gitlab-ci-pipelines-exporter
+    sources:
+    - https://github.com/mvisonneau/helm-charts/tree/main/charts/gitlab-ci-pipelines-exporter
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/gitlab-ci-pipelines-exporter-0.3.6/gitlab-ci-pipelines-exporter-0.3.6.tgz
+    version: 0.3.6
+  slack-git-compare:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2025-06-23T20:34:10.01157313Z"
+    description: Compare git references within Slack
+    digest: 03a4c55e09a6d9148516a83613e43ab2c4b004a8b0b18f7c0bfed73a72dbd3bb
+    home: https://github.com/mvisonneau/slack-git-compare
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: slack-git-compare
+    sources:
+    - https://github.com/mvisonneau/helm-charts/tree/main/charts/slack-git-compare
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/slack-git-compare-0.0.10/slack-git-compare-0.0.10.tgz
+    version: 0.0.10
+  tailscale-relay:
+  - apiVersion: v2
+    appVersion: v1.68.1
+    created: "2025-06-23T20:34:10.141879249Z"
+    description: Deploy a tailscale relay on top of kubernetes
+    digest: dd54c94d054365ad2c0f4626191e509f453f1f4f68b5d4c813f42aca2937a9a3
+    home: https://github.com/mvisonneau/tailscale-relay-over-k8s
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: tailscale-relay
+    sources:
+    - https://github.com/mvisonneau/helm-charts/tree/main/charts/tailscale-relay-over-k8s
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/tailscale-relay-0.2.7/tailscale-relay-0.2.7.tgz
+    version: 0.2.7
+  unpoller:
+  - annotations:
+      artifacthub.io/changes: |
+        - Add support for existing secrets that contain the unpoller config
+    apiVersion: v2
+    appVersion: v2.9.2
+    created: "2025-06-23T20:34:10.261348649Z"
+    description: Deploy UniFi Poller
+    digest: 03b524164459c4e208d7e8d4db6d3da7fcea0712a0f8c3d740eabed91271d9da
+    home: https://unpoller.com
+    maintainers:
+    - email: maxime.visonneau@gmail.com
+      name: mvisonneau
+    name: unpoller
+    sources:
+    - https://unpoller.com
+    urls:
+    - https://github.com/ujlbu4/mvisonneau-helm-charts/releases/download/unpoller-0.1.0/unpoller-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-06-23T20:34:10.261358778Z"
